@@ -11,7 +11,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Aty3 extends AppCompatActivity {
 
     private Button btnStartAty1;
     private Button btnStartAty2;
@@ -21,13 +21,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.aty3);
         btnStartAty1 = (Button) findViewById(R.id.btnStartAty1);
         btnStartAty1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MainActivity.this, Aty1.class);
+                Intent i = new Intent(Aty3.this, Aty1.class);
                 startActivity(i);
 
             }
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MainActivity.this, Ayt2.class);
+                Intent i = new Intent(Aty3.this, Ayt2.class);
                 startActivity(i);
 
             }
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MainActivity.this, Aty3.class);
+                Intent i = new Intent(Aty3.this, Aty3.class);
                 startActivity(i);
 
             }
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MainActivity.this, Act4.class);
+                Intent i = new Intent(Aty3.this, Act4.class);
                 startActivity(i);
 
             }
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
         //WebView
         WebView browser=(WebView)findViewById(R.id.webView);
-        browser.loadUrl("http://www.classicpoetry.net");
+        browser.loadUrl("http://www.classicpoetry.net/BookList.aspx");
 
         WebSettings webSettings = browser.getSettings();
         webSettings.setJavaScriptEnabled(true);             //调用js
